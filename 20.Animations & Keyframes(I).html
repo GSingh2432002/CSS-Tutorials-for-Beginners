@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations & Keyframes</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+        .box-1 {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: GauravOne; /*First we have to name the animation.*/
+            animation-duration: 1s; /* How long time an animation should take to complete one cycle.*/
+            animation-iteration-count: 2; /*How many times the animation will iterate/run.*/
+            animation-fill-mode: forwards; /*It apply when the element is not playing.*/
+            animation-timing-function:ease-in; /*It specifies the speed of the animation.*/
+            animation-delay: 0.3s; /*It specifies a delay for the start of the animation.*/
+            animation-direction: reverse; /*It specifies whether an animation shoukd be played.*/
+        } 
+        .box-2 {
+            background-color: lightgoldenrodyellow;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: GauravTwo;
+            animation-duration: 6s; /* How long time an animation should take to complete one cycle.*/
+            animation-iteration-count: 2; /*How many times the animation will iterate/run.*/
+            animation-fill-mode: forwards; /*It apply when the element is not playing. */
+            animation-timing-function:ease-in; /* It specifies the speed of the animation. */
+            animation-delay: 0.3s; /*It specifies a delay for the start of the animation. */
+            animation-direction: reverse; /*It specifies whether an animation shoukd be played. */
+        }
+        .box-3 {
+            /* This is Shorthand property for using Animation */
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        @keyframes GauravTwo {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+
+        @keyframes GauravOne {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 1400px;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <p>Q.What is Animations?<br>Ans:-Animation lets an element change from one style to another.</p>
+    <p>Q.What is Keyframes?<br>Ans:-Keyframes hold what styles the element will have at certain amount of times.</p>
+    <div class="container">
+        <div class="box-1">This Is Box One:</div>
+        <div class="box-2">This Is Box Two:</div>
+        <div class="box-3">This Is Box Three:</div>
+    </div>
+</body>
+</html>

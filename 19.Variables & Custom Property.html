@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Property</title>
+    <style>
+        /* Through root selector a global variables is declare which will apply on all the html sheet bcoz it is Globally declared.  */
+        :root {
+            --primary-color: violet;
+            --danger-color: blue;
+        }
+        .box {
+            /* '--'Double Dash symbol is used to represent Custom Properties.  */
+            /* --box-color: violet; */
+            width: 200px;
+            height: 200px;
+            /* var() Function is used to insert the variable in the CSS.  */
+            background-color: var(--primary-color);
+            border: 2px solid var(--danger-color);
+            box-shadow: 3px 3px lightcoral;
+            margin: 2px 10px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <p>Q.What are Variables?<br>Ans:-The var() function is used to insert the value of a CSS variable.</p>
+    <p>Q.what are Custom Property?<br>Ans:-Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS authors that contain specific values to be reused throughout a document.<br></p>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+    </div>
+</body>
+</html>

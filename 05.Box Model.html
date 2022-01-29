@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box; /*include the padding and border in an element's total width and height.*/
+
+            /*Here you can put the margin and border 0px for your whole page*/
+            /* margin: 0px; 
+            border: 0px;  */
+        }
+        .container {
+            background-color: rgb(16, 107, 224);
+
+            border: 3px solid yellowgreen; /*see the previous code for border concept.*/
+
+            padding: 5px; /*padding properties are used to generate space around an element's content, inside of any defined borders. if u apply padding=5px then it will apply on all the four side equally*/
+                /*padding: 5px 6px 7px 8px; it is the shorthand property for padding which we can apply in all four direction differently.*/
+
+            margin: 25px; /*margin properties are used to create space around elements, outside of any defined borders.if u apply margin=5px then it will apply on all the four side equally*/
+                /*margin: 10px 15px 15px 10px; it is the shorthand property for margin which we can apply in all four direction differently.*/
+
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Box Model</h1>
+    <p id="box_model">The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.<br>
+    Content - The content of the box, where text and images appear.<br>
+    Padding - Clears an area around the content. The padding is transparent.<br>
+    Border - A border that goes around the padding and content.<br>
+    Margin - Clears an area outside the border. The margin is transparent.<br>
+    </p>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="First">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate blanditiis quo at esse distinctio nostrum velit perspiciatis sed nobis libero.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="Second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate blanditiis quo at esse distinctio nostrum velit perspiciatis sed nobis libero.</p>
+    </div>
+
+    <div class="container">
+        <h4>This is my heading</h4>
+        <p id="Third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate blanditiis quo at esse distinctio nostrum velit perspiciatis sed nobis libero.</p>
+    </div>
+</body>
+</html>

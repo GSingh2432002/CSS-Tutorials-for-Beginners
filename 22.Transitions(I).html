@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightslategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-property: background-color; /*Which part of the body will use Transition Property.*/
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+
+            /* Transition Shorthand Property:- */
+            /* transition: background-color 1s ease-in-out 2s; */
+        }
+        #box:hover {
+            background-color: green;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is CSS Transition</h3>
+    <p><strong>Q.What is Transition?<br>Ans:- Transitions allows you to change property values smoothly, over a given duration.</strong></p>
+    <div class="container">
+        <div id="box">
+            This is Our Transition Box
+        </div>
+    </div>
+</body>
+</html>

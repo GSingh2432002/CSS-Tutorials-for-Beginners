@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors & More Design</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: rgba(223, 245,202);
+            padding:34px;
+            margin: 34px auto;
+            width: 650px;
+        }
+        .btn {
+            font-family: cursive;
+            font-weight: bold;
+            background-color: lightblue;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: rgb(5, 0,0);
+            background-color: rgb(221,166,38);
+        }
+        /* This is known as pseudo selectors:- */
+        a:visited {
+            background-color: aqua;
+        }
+        a:active {
+            background-color: darkblue;
+        }
+        
+        .btn:hover {
+            color:darkgoldenrod;
+            background-color: cyan;
+            border: 3px solid darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudo Selectors</h2>
+    <p>Pseudo-element is used to style specified parts of an element.<br>
+    </p>
+    <div class="container" id="P1">
+        <h3>This is My Heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat rem ea soluta voluptatibus cupiditate non voluptates magnam, blanditiis consectetur mollitia repellat, porro ratione vero! Ea, neque? Dolore ullam voluptas nam nostrum in ab ipsa deserunt!</p>
+        <a href="https//google.com" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>

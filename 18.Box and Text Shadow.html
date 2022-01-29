@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .Automobile {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border:2px solid red; */
+            background-color: aqua;
+
+            /* To add shadow to an Element:- */
+            box-shadow: 10px 13px 10px 34px green; /*box-shadow: offset-x/inset-x offset-y/inset-y blur-radius spread-radius color.(It can be Negative and Positive)*/
+        }
+        /* Text-shadow property adds shadow to text. */
+        h2 {
+            color: blue;
+            text-shadow: 2px 3px 5px black;
+            /*Text-shadow: offset-x/inset-x offset-y/inset-y blur-radius color.(It can be Negative and Positive)*/
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Automobile" id="car-1">
+            <h2>CAR1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nostrum animi ipsa vitae minus asperiores repellendus molestiae, odio, exercitationem eveniet quidem voluptatibus, praesentium tempora quod nemo hic officia dicta rem!</p>
+        </div>
+        <div class="Automobile" id="car-2">
+            <h2>CAR2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil voluptates quos consectetur, praesentium ducimus quia totam voluptatem esse cum odio reprehenderit, autem perferendis libero aliquam illo, id suscipit sit!</p>
+        </div>
+        <div class="Automobile" id="car-3">
+            <h2>CAR3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid vel obcaecati impedit perferendis, sapiente ipsum autem beatae numquam repellendus doloremque? Illo labore vel accusantium consequatur quaerat qui sequi necessitatibus consectetur.</p>
+        </div>
+    </div>
+</body>
+</html>

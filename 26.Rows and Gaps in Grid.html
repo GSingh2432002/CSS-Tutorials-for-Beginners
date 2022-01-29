@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows & Gaps In Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 1fr 2fr 3fr;
+            grid-auto-rows: 4fr; /*It will define for all the rows that are there.*/
+            /* grid-auto-columns: 4fr; It will define for all the columns that are there.  */
+            grid-gap: 1rem; /* It is used to create the gap between the grid. */
+        }
+        .box {
+            background-color: greenyellow;
+            border: 3px solid darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+</body>
+</html>

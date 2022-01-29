@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+
+        }
+        .container {
+            width: 1000px;
+            border: 5px solid purple;
+            margin: 10px auto;
+        }
+        .item {
+            border: 3px solid grey;
+            margin: 12px 4px;
+            padding: 12px 3px;
+            background-color: rgb(241, 184, 184);
+        }
+        #Fruits {
+            float: left; /*Using this property we specifies whether an element should float to the left, right, or not at all or for easy to understand we can call position of the element will be right, left, or not at all.*/
+            width: 48%;
+        }
+        #Vegetables {
+            float: left;/*an element should float to the left, right, or not at all. */
+            width: 48%;
+        }
+        #Grocery {
+            /* float: left; */ /*here we not write float property becoz the FRUITS and VEGETABLES overlapping on the GROCERY part. And for solving that issue we use CLEAR property for removing Overlapping*/
+            clear:both; /*clear property used for removing overlapping*/
+            width: 100%; /*and here the width should be 100% becoz we have to declare the width for the GROCERY part.*/
+        }
+        p,h3 {
+            text-align: justify; /*it is used for text and specifies the horizonatal alignment of text in an element.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>ALIGNMENT & FLOAT PROPERTY</h1>
+    <h2>Note:- READ IT CAREFULLY :)</h2>
+    <div class="container">
+        <div id="Fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="FruitsPara" class="Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci officia, sunt consequuntur sit voluptate. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores corporis excepturi fugiat nobis, nesciunt ad cum possimus cupiditate incidunt rem praesentium dignissimos voluptas, voluptatum doloremque sequi, molestias repellendus eos veritatis iste facilis. Labore quam ab harum magni magnam, exercitationem molestias animi atque ipsam cumque dolor illum? Sapiente perferendis, in eaque natus eveniet, debitis repellat veniam, blanditiis a consequuntur error! Minima labore optio veritatis aliquam blanditiis molestiae, saepe natus quas, repudiandae, porro fugiat deleniti nobis velit iusto pariatur modi itaque vero. Quod adipisci qui temporibus iste sit iusto corrupti eligendi nemo dicta tempore et eum voluptas numquam inventore tenetur pariatur, dignissimos quasi saepe totam nesciunt natus. Temporibus enim, error doloremque provident nostrum veniam dicta ipsam itaque necessitatibus quos quas ab dolor nam ea omnis. Aspernatur impedit totam recusandae amet commodi odio explicabo non fuga officiis voluptates perspiciatis minus doloremque tenetur.</p>
+        </div>
+
+        <div id="Vegetables" class="item">
+            <h3>Fruits</h3>
+            <p id="VegetablesPara" class="Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci officia, sunt consequuntur sit voluptate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum molestias labore corrupti non sequi debitis nemo esse consequuntur corporis fugiat. Suscipit repellendus magnam debitis autem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ducimus doloribus delectus minima nobis eaque pariatur temporibus distinctio possimus harum accusantium cupiditate neque voluptatum odit quam quis aut culpa consequuntur quae sit atque quas et? Lorem ipsum dolor sit amet consectetur adipisicing elit. At quod culpa ut vel perferendis accusamus consequuntur repellendus facere distinctio voluptatem ea adipisci magni voluptate, odit voluptatum neque id officia nulla cum expedita recusandae. Reiciendis, architecto.</p>
+        </div>
+        
+        <div id="Grocery" class="item">
+            <h3>Fruits</h3>
+            <p id="GroceryPara" class="Para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam adipisci officia, sunt consequuntur sit voluptate. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque fuga dolor porro nulla fugiat commodi consequuntur perspiciatis culpa. Laudantium sequi molestiae assumenda error dolorem labore earum. Ullam officiis facere modi fugiat amet asperiores dignissimos sit, deleniti et, quis consectetur. Accusamus neque repudiandae facere aspernatur atque perspiciatis veniam nemo explicabo ducimus deleniti accusantium voluptatum quaerat, animi sint recusandae officia quae corrupti perferendis temporibus! Eius ea molestiae id nisi aspernatur laudantium, impedit ipsum, reiciendis itaque consequatur eum nulla voluptates rem delectus temporibus, aliquid quia fugit? Quidem, non aspernatur provident et repellat expedita!</p>
+        </div>
+    </div>
+</body>
+</html>

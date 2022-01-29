@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            height: 544px; 
+            width: 100%;
+            border: 4px solid darkgreen;
+            display: flex; /* Initialize the container as a flex box */
+            
+            /* Flex properties for a flex container:- */
+
+            /* flex-direction: row; (Default value of flex-direction is row) */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */ 
+            
+
+            /* flex-wrap: wrap; (Default value of flex-direction is no-wrap) */
+            /* flex-wrap: wrap-reverse; */
+
+            /* This is a shorthand for flex-direction and flex-wrap:- */
+            /* flex-flow: row-reverse wrap; */ 
+
+            /* Justify-content property is used to align the flex items:-*/
+            /* justify-content: center; (Value aligns the flex items at the center of the container.)*/
+            /* justify-content: space-between; (space-between value displays the flex items with space between the lines.) */
+            /* justify-content: space-evenly; (space-evenly value displays the flex items with space before, between, and after the lines equally.) */
+            /* justify-content: space-around; (space-around value displays the flex items with space before, between, and after the lines.) */
+
+            /* Align-Items property is used to align the flex items:- */
+            /* align-items: center; (Center value aligns the flex items in the middle of the container) */
+            /* align-items: flex-end; (Flex-end value aligns the flex items at the bottom of the container) */
+            /* align-items: flex-start; (Flex-start value aligns the flex items at the top of the container) */
+            /* align-items: stretch; (Stretch value stretches the flex items to fill the container. (this is default)) */ 
+            /* align-items: baseline; (Baseline value aligns the flex items such as their baselines aligns.) */
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 3px dashed blue;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        /* Flex properties for a flex item:- */
+        #item1 {
+            /* Order property specifies the order of the flex items */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            /* Flex-grow property specifies how much a flex item will grow relative to the rest of the flex items */
+            /* flex-grow: 3; */
+
+            /* Flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items */
+            /* flex-shrink: 2; */
+
+            /* Flex-basis property specifies the initial length of a flex item. */
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+            /* flex-basis: 160px; */
+
+            /* Align-self property specifies the alignment for the selected item inside the flexible container.  */
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            /* align-self: center; */
+        }
+        #item2 {
+                       
+        }
+        #item3 {
+            
+        }
+        #item4 {
+
+        }
+        #item5 {
+
+        }
+        #item6 {
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox:-</h1>
+    <p>What is flexbox?<br>Answer:-The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.<br></p>
+    <note><strong>If you want to study the code properly, you want un-comment the code and one by one run the through your respective browser then you will understand easily.</strong></note>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <div class="item" id="item4">Fourth Box</div> 
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div> 
+    </div>
+</body>
+</html>

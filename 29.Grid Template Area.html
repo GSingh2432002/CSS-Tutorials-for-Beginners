@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird Template Area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+
+            /* Grid-template-areas CSS property specifies named grid areas, establishing the cells in the grid and assigning them names. */
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item {
+            background-color: lightgreen;
+            border: 3px solid black;
+            color: darkgreen;
+        }
+        #navbar {
+            grid-area: navbar;
+        }
+        #section {
+            grid-area: section;
+        }
+        #aside {
+            grid-area: aside;
+        }
+        #footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Us Admission Careers
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, deleniti exercitationem? Ullam maiores quos fuga. Amet doloribus reiciendis aut, nobis tempore vero voluptate enim earum illum aliquam quasi fugit explicabo repudiandae. Qui aperiam nihil voluptate porro unde ea commodi, necessitatibus, omnis reprehenderit sequi ab quos excepturi eligendi dolor nesciunt tempore ullam nemo. Vitae quaerat autem inventore neque aspernatur incidunt earum? Corporis suscipit praesentium ullam laborum? Blanditiis est quasi nesciunt libero veniam amet temporibus atque, odio magni, deserunt distinctio harum! Id qui animi minima mollitia pariatur quo fuga eligendi consequuntur. Voluptatem officiis a voluptatum velit dignissimos, minima quasi omnis perspiciatis ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quidem quae ipsam tempore obcaecati aut nam corporis adipisci ab dicta dolor eligendi earum ipsum quas mollitia, saepe, itaque quia. Similique molestias, quae sequi atque deleniti modi odit voluptates quis error iure dicta nam nihil aspernatur corporis minima maiores quam quod labore fugit reprehenderit minus tempora! Vitae ipsum, iusto repellat asperiores nihil error illo omnis, odio repellendus exercitationem velit, saepe reiciendis aperiam laborum veniam! Aliquid cupiditate impedit animi, doloribus ex facere. Magnam debitis ut, asperiores id illo delectus accusantium! Enim voluptates vero exercitationem, at ex eos excepturi numquam atque tempore cupiditate?</div>
+        <div id="aside" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi ducimus cumque animi illum iusto labore eligendi, sunt suscipit at voluptas recusandae dolorem quam neque id quis minima eveniet. Quia, aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae quisquam voluptatem, error vero odit esse odio aut totam magni? Molestias nulla, libero veniam maxime, nihil voluptatum doloremque voluptas ratione laboriosam temporibus consectetur ullam minus quo sunt harum dolore iure. Accusamus, inventore qui labore maxime deserunt doloremque vel nam dolores cumque cum ut sapiente impedit fugiat exercitationem! Quam earum assumenda quos officia dolor at eum deleniti, autem sed aut aliquam ratione natus distinctio id ad veritatis harum placeat ducimus eius. Odit aliquam alias culpa amet distinctio libero, suscipit ipsa accusamus eos molestias eveniet perferendis sapiente nemo mollitia at minima tempora qui.</div>
+        <div id="footer" class="item">
+            Conditions of Use & Sale  Privacy Notice 
+        </div>
+    </div>
+</body>
+</html>

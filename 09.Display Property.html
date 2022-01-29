@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            border: 2px solid green;
+            margin: auto;
+            width: 1200;
+        }
+        img {
+            margin:auto;
+            display: block;
+            width:34px;
+        }
+        h3 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin:0px ;
+        }
+        .box {
+            border: 4px solid black;
+            background-color: grey;
+            margin: 4px 0px;
+            padding: 23px;
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+        .container {
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <h3><strong>Difference between Inline, Block, Inline-block</strong></h3>
+    <p>A)Display:Inline<br>1.Left & Right margins and padding are allowed, but not on top & bottom.<br> 2.Cannot have a width and height set.<br> 3.other element can sit to their left and right side.<br> 4.a, abbr, Span, strong are some Inline Elements.<br><br>B)Display:Block<br>1.A line break after the block element.<br> 2.Acquire full width if width not defined.<br> 3.article, div, header, hr, main, nav are some Block-level Element.<br><br>C)Display:Inline-Block<br>1.Allow others element to sit to their left and right.<br> 2.Display an element as an inline-level block container.<br> 3.Can Set Height and Width values.<br> 4.It does not add a line break after the element.</p>
+    <header class="top">
+        <img src="https://www.boredpanda.com/blog/wp-content/uploads/2020/06/Artist-shows-alternative-versions-of-famous-logos-in-different-styles-5ed4ac823b564__880.jpg" alt="">
+        <h3>Welcome to Gaurav's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odit quibusdam, necessitatibus enim temporibus praesentium ab nostrum delectus nemo magnam placeat non, ratione itaque at illum neque quisquam. Sapiente quis esse vel possimus rem, porro mollitia quae ullam unde libero? Possimus cupiditate dignissimos sit ipsa.</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odit quibusdam, necessitatibus enim temporibus praesentium ab nostrum delectus nemo magnam placeat non, ratione itaque at illum neque quisquam. Sapiente quis esse vel possimus rem, porro mollitia quae ullam unde libero? Possimus cupiditate dignissimos sit ipsa.</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odit quibusdam, necessitatibus enim temporibus praesentium ab nostrum delectus nemo magnam placeat non, ratione itaque at illum neque quisquam. Sapiente quis esse vel possimus rem, porro mollitia quae ullam unde libero? Possimus cupiditate dignissimos sit ipsa.</p>
+        </div>
+    </div>
+</body>
+</html>
